@@ -1,10 +1,9 @@
-var _ = require("lodash/core");
+//var _ = require("lodash/core");
 import React from "react";
 import ReactDOM from "react-dom";
 
+//Components
 import App from "./App";
 
-const title = "React with Webpack and Babel";
-
-ReactDOM.render(<App title={title} />, document.getElementById("root"));
-module.hot.accept();
+ReactDOM.render(<App />, document.getElementById("root"));
+//module.hot.accept();

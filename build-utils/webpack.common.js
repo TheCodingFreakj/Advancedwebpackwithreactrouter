@@ -13,10 +13,11 @@ module.exports = {
     filename: "bundle.js",
   },
   devServer: {
-    contentBase: "./dist",
+    //contentBase: "./dist",
+    contentBase: path.join(__dirname, "public"),
     hot: true,
+    historyApiFallback: true,
   },
-  devtool: "source-map",
   module: {
     rules: [
       {
